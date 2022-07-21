@@ -148,7 +148,7 @@ Actions
 可以参考 开头的视频。代码如下。
 
 ```javascript
-const targetHost = "xxx.herokuapp.com"; //你的heroku的hostname
+const targetHost = "wuliangfo.herokuapp.com"; //你的heroku的hostname
 addEventListener("fetch", (event) => {
   let url = new URL(event.request.url);
   url.hostname = targetHost;
@@ -211,11 +211,11 @@ https://github.com/badafans/better-cloudflare-ip
             "settings": {
                 "vnext": [
                     {
-                        "address": "***.herokuapp.com", // heroku app URL 或者 cloudflare worker url/ip
+                        "address": "wuliangfo.herokuapp.com", // heroku app URL 或者 cloudflare worker url/ip
                         "port": 443,
                         "users": [
                             {
-                                "id": "", // 填写你的 UUID
+                                "id": "0b6dd271-50b8-4e4a-8d66-fbabdee96ec7", // 填写你的 UUID
                                 "encryption": "none"
                             }
                         ]
@@ -226,7 +226,7 @@ https://github.com/badafans/better-cloudflare-ip
                 "network": "ws",
                 "security": "tls",
                 "tlsSettings": {
-                    "serverName": "***.herokuapp.com" // heroku app host 或者 cloudflare worker host
+                    "serverName": "wuliangfo.herokuapp.com" // heroku app host 或者 cloudflare worker host
                 }
               }
           }
